@@ -3,13 +3,10 @@
 ![CloudInit funktionsweise](https://github.com/lauradubach/Projektmanagement/blob/b54d9074a289cf795378d3fca5205d6e6c9d355d/Cloud%20Init.png)
 
 ## VM & User/Gruppen via Bash erstellen
-|$multipass launch | vm erstellen, restart computer then it works|
-
+| $multipass launch | vm erstellen, restart computer then it works |
 | $multipass list | nun sehen wir die erstellte VM |
-
 | $cat /etc/group | gruppe auslesen |
-
-| $cat /etc/user -> user auslesen |
+| $cat /etc/user | user auslesen |
 
 | $multipass exec "name" sudo apt update -> maschine updaten |
 
