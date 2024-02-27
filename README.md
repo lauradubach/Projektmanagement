@@ -4,7 +4,8 @@
 
 ## VM & User/Gruppen via Bash erstellen
 
-
+| Bash befehl | Beschreibung |
+| ---- | ---- |
 | $multipass launch | vm erstellen, restart computer then it works |
 | $multipass list | nun sehen wir die erstellte VM |
 | $cat /etc/group | gruppe auslesen |
@@ -16,6 +17,8 @@
 
 ## Cloud Init der VM mitgeben
 
+| Bash befehl | Beschreibung |
+| ---- | ---- |
 | $ multipass set local.driver=hyperv | driver auf korrekten service stellen |
 | $ multipass launch --cloud-init ./.cloud-init/yaml.yml -n test1 | Cloud Init yaml File mitgeben |
 | $multipass ls | IP auslesen |
