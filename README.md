@@ -1,6 +1,6 @@
 # Cloud Init
 
-![CloudInit funktionsweise]()
+![CloudInit funktionsweise](https://github.com/lauradubach/Projektmanagement/blob/b54d9074a289cf795378d3fca5205d6e6c9d355d/Cloud%20Init.png)
 
 $multipass launch -> vm erstellen, restart computer then it works
 $multipass list -> nun sehen wir die erstelllte vom
