@@ -6,7 +6,6 @@
 
 
 | $multipass launch | vm erstellen, restart computer then it works |
-| ----- | ----- |
 | $multipass list | nun sehen wir die erstellte VM |
 | $cat /etc/group | gruppe auslesen |
 | $cat /etc/user | user auslesen | 
@@ -16,12 +15,13 @@
 
 
 ## Cloud Init der VM mitgeben
-| $ multipass set local.driver=hyperv -> driver auf korrekten service stellen |
-| $ multipass launch --cloud-init ./.cloud-init/yaml.yml -n test1 |
-| $multipass ls -> IP auslesen |
-| $ssh "user"@ip Adresse -> ssh testen |
-| $cloud-init status -> muss done |
-| $sudo less /var/log/cloud-init.log -> log file anschauen |
+
+| $ multipass set local.driver=hyperv | driver auf korrekten service stellen |
+| $ multipass launch --cloud-init ./.cloud-init/yaml.yml -n test1 | Cloud Init yaml File mitgeben |
+| $multipass ls | IP auslesen |
+| $ssh "user"@ip Adresse | ssh testen |
+| $cloud-init status | muss done |
+| $sudo less /var/log/cloud-init.log | log file anschauen |
 
 /var/lib/cloud/instance -> cache beim starten wird hier abgelegt
 
